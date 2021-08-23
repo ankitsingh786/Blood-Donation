@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_dehaze_24">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="312dp"
+        android:layout_height="134dp"
+        android:src="@drawable/bg">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_notifications_24">
+
+    </ImageView>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ED2F2F">
+
+    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ankit"
+        android:textAlignment="center"
+        android:textColor="#ED2F2F"
+        android:textSize="20dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp">
+
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ED2F2F">
+
+    </View>
+
+
+</LinearLayout>

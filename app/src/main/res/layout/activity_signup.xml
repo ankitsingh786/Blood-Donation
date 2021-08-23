@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_radian"
+    tools:context="com.example.blooddonation.SignupActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="247dp"
+        android:layout_height="203dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/bg"
+        app:tint="@color/white" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textColorHighlight="#fff"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:maxLines="1"
+        android:maxLength="100"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textColorHighlight="#fff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Confirm Password"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:maxLength="100"
+        android:inputType="textPassword"
+        android:textColorHint="#fff"
+        android:textColorHighlight="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="6dp"
+        android:padding="4dp"
+        android:text="Already have an account. Sign In"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapesignup"
+        android:shadowColor="@android:color/transparent"
+android:textAllCaps="false"
+        android:text="Verify your Email"
+        android:textColor="#E41515" />
+
+    <Button
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapesignup"
+        android:shadowColor="@android:color/transparent"
+android:visibility="gone"
+        android:text="Register"
+        android:textColor="#E41515" />
+</LinearLayout>
