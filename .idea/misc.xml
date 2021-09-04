@@ -8,10 +8,14 @@
         <entry key="app/src/main/res/drawable/circle_red.xml" value="0.2023148148148148" />
         <entry key="app/src/main/res/drawable/circle_red_no_border.xml" value="0.2023148148148148" />
         <entry key="app/src/main/res/drawable/fade_in.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.19954337899543378" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2023148148148148" />
+        <entry key="app/src/main/res/drawable/ic_lock_open_black_24dp.xml" value="0.19954337899543378" />
+        <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.19954337899543378" />
         <entry key="app/src/main/res/drawable/outline_bloodtype_24.xml" value="0.19954337899543378" />
         <entry key="app/src/main/res/drawable/outline_groups_24.xml" value="0.19954337899543378" />
         <entry key="app/src/main/res/drawable/outline_health_and_safety_24.xml" value="0.19954337899543378" />
+        <entry key="app/src/main/res/drawable/outline_logout_24.xml" value="0.19954337899543378" />
         <entry key="app/src/main/res/drawable/outline_perm_identity_24.xml" value="0.19954337899543378" />
         <entry key="app/src/main/res/drawable/round_local_hospital_24.xml" value="0.19954337899543378" />
         <entry key="app/src/main/res/drawable/round_masks_24.xml" value="0.19954337899543378" />
@@ -25,15 +29,19 @@
         <entry key="app/src/main/res/drawable/submit.xml" value="0.2023148148148148" />
         <entry key="app/src/main/res/layout-v28/activity_form.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_dashboard_donar.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_form.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_hospital_list.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_otp.xml" value="0.18796296296296297" />
+        <entry key="app/src/main/res/layout/activity_otp.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_third.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/customlayout.xml" value="0.26842105263157895" />
         <entry key="app/src/main/res/layout/fragment_otp.xml" value="0.18796296296296297" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.18796296296296297" />
       </map>
     </option>
   </component>
@@ -42,5 +50,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>

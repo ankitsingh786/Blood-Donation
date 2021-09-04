@@ -7,16 +7,34 @@
     tools:context=".OtpActivity"
     android:background="@drawable/background_radian" >
 
+    <ImageView
+        android:layout_width="355dp"
+        android:layout_height="318dp"
+        android:src="@drawable/bg_removebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:tint="@color/white">
+
+    </ImageView>
+
     <Button
         android:id="@+id/submt"
         android:layout_width="360dp"
         android:layout_height="52dp"
         android:background="@drawable/shapelogin"
+        android:text="Submit"
+        android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
         tools:ignore="SpeakableTextPresentCheck">
 
     </Button>

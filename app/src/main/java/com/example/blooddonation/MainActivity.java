@@ -10,13 +10,20 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
+    FirebaseAuth mAuth;
+    FirebaseUser currentUser;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth=FirebaseAuth.getInstance();
+        currentUser=mAuth.getCurrentUser();
 
         TextView text=(TextView) findViewById(R.id.textblood) ;
 
@@ -28,10 +35,35 @@ public class MainActivity extends AppCompatActivity {
 
         int SPLASH_SCREEN_TIME_OUT = 9000;
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(MainActivity.this, SecondActivity.class));
-            overridePendingTransition(R.anim.slide_out_bottom, R.anim.slide_in_bottom);
-            finish();
+            if (currentUser!=null){
+                if (mAuth.getCurrentUser().isEmailVerified()){
+                    SendToDash();
+                }else{
+                    sendtologin();
+                }
+
+            }else{
+                SendtoFirst();
+            }
             //the current activity will get finished.
         }, SPLASH_SCREEN_TIME_OUT);
+    }
+
+    private void sendtologin() {
+        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        overridePendingTransition(R.anim.slide_out_bottom, R.anim.slide_in_bottom);
+        finish();
+    }
+
+    private void SendtoFirst() {
+        startActivity(new Intent(MainActivity.this, SecondActivity.class));
+        overridePendingTransition(R.anim.slide_out_bottom, R.anim.slide_in_bottom);
+        finish();
+    }
+
+    private void SendToDash() {
+        startActivity(new Intent(MainActivity.this, Dashboard.class));
+        overridePendingTransition(R.anim.slide_out_bottom, R.anim.slide_in_bottom);
+        finish();
     }
 }

@@ -3,6 +3,7 @@ package com.example.blooddonation;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.content.Intent;
 import android.content.pm.Signature;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.williamww.silkysignature.views.SignaturePad;
 
 public class FormActivity extends AppCompatActivity
@@ -27,6 +30,8 @@ public class FormActivity extends AppCompatActivity
             "A Positive","A Negative","B Positive","B Negative",
             "AB Positive", "AB Negative" };
 
+FirebaseAuth mAuth;
+FirebaseUser currentuser;
 
 
 
@@ -36,6 +41,8 @@ public class FormActivity extends AppCompatActivity
         setContentView(R.layout.activity_form);
         mSignaturePad = (SignaturePad) findViewById(R.id.signature_pad);
         mClearButton=findViewById(R.id.clearsignature) ;
+        mAuth=FirebaseAuth.getInstance();
+        currentuser=mAuth.getCurrentUser();
         submit=findViewById(R.id.submits);
         Spinner spino = findViewById(R.id.coursesspinner);
         spino.setOnItemSelectedListener(this);
@@ -85,6 +92,18 @@ public class FormActivity extends AppCompatActivity
                 mSignaturePad.clear();
             }
         });
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(FormActivity.this,Dashboard.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
 
     }
 
@@ -98,4 +117,9 @@ public class FormActivity extends AppCompatActivity
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
+
+
+
 }
